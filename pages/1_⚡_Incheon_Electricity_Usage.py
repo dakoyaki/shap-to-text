@@ -34,7 +34,7 @@ def get_data_columns(df):
             cols.remove(col)
     return cols
 
-@st.cache
+@st.cache(allow_output_mutation=True)
 def get_geom_data(path):
     gdf = gpd.read_file(path)
     return gdf
