@@ -19,7 +19,7 @@ DOWNLOADS_PATH = STREAMLIT_STATIC_PATH / "downloads"
 if not DOWNLOADS_PATH.is_dir():
     DOWNLOADS_PATH.mkdir()
 
-link_prefix = "/Users/macos/Desktop/streamlit-app/data/incheon_electricity_usage/"
+link_prefix = "data/incheon_electricity_usage/"
 
 data_links = {
     "dong": link_prefix + "dataset.gpkg",
